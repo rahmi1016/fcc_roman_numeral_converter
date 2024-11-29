@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --background: rgb(137, 168, 178);
+  --container: rgb(179, 200, 207);
+  --button: rgb(241, 240, 232);
+  --buttonBorder: rgb(229, 225, 218);
+  --warning: rgb(148, 78, 99);
+  --text: black;
+  --warningBorder: rgb(180, 123, 132);
+  --sans: "Noto Sans";
+  --serif: "Playfair Display";
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.freecodecamp-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.title {
+  font-family: var(--serif);
+  color: var(--text);
+  font-size: 3rem;
+}
+
+.input-container {
+  background-color: var(--container);
+  width: 500px;
+  height: 250px;
+  border: 3px solid var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.input-container p {
+  font-family: var(--sans);
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.number,
+.convert-btn {
+  width: 400px;
+}
+
+.number {
+  background-color: var(--background);
+  height: 60px;
+  border: 3px solid var(--text);
+  padding: 0 10px;
+  font-size: 40px;
+  color: var(--text);
+}
+
+.convert-btn {
+  background-color: var(--button);
+  height: 50px;
+  font-size: 24px;
+  color: var(--text);
+  font-family: var(--sans);
+  border: 3px solid var(--buttonBorder);
+  cursor: pointer;
+}
+
+.convert-btn:hover {
+  background-color: var(--buttonBorder);
+}
+
+.convert-btn:active {
+  transform: scale(0.95);
+}
+
+.result {
+  font-size: 48px;
+  padding: 12px;
+  width: 500px;
+  border: 3px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--container);
+}
+
+#output {
+  font-family: var(--sans);
+}
+
+.warning {
+  font-size: 24px;
+  padding: 12px;
+  text-align: center;
+  width: 500px;
+  border: 3px solid var(--warningBorder);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background-color: var(--warning);
+}
